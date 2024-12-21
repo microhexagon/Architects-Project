@@ -7,14 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f7b7c37647.js" crossorigin="anonymous"></script>
 </head>
-<body">
-    <nav class="w-full flex justify-between items-center bg-slate-300">
+<body>
+
+    <nav class="bg-slate-300">
+
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
 
         <div>
             <img src="/assets/Icons/logo.svg" alt="logo">
         </div>
         
-        <ul class="flex text-[rgba(51,51,51,0.50)]">
+        <div class="block sm:hidden">
+        <button id="menuButton" class="text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+        
+        <ul class="hidden sm:flex space-x-4 text-[rgba(51,51,51,0.50)]">
             <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
             
             <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
@@ -26,6 +37,27 @@
             <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
         </ul>
 
+         </div>
+
+          <ul  id="mobileMenu" class="hidden sm:hidden">
+            <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
+            
+            <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
+            
+            <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index2.html" target="_blank">ПРОЕКТЫ</a></li>
+            
+            <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index3.html" target="_blank">СЕРТИФИКАТЫ</a></li>
+            
+            <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
+        </ul>
+
     </nav>
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
