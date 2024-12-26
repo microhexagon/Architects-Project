@@ -9,68 +9,75 @@
 </head>
 <body>
 
-  <nav class="bg-slate-300">
-
-    <div class="mx-auto px-8 py-5 sm:py-0 sm:px-8 md:px-16 lg:px-24 xl:pl-32 xl:pr-64 sm:h-20 xl:h-24 flex justify-between items-center">
-
-      <div>
-          <img src="/assets/Icons/logo.svg" alt="logo">
-      </div>
+  <nav class="mx-auto px-8 py-5 md:py-0 md:px-16 lg:px-24 xl:pl-32 xl:pr-64 md:h-20 xl:h-24 flex justify-between items-center">
+    
+     <img bg-green-100" src="/assets/Icons/logo.svg" alt="logo">
       
-      <div class="block sm:hidden">
-        <button id="menuButton" class="text-gray-500 focus:outline-none">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    <ul class="flex md:space-x-5 lg:space-x-8 xl:space-x-10 text-[rgba(51,51,51,1)]">
+
+        <li class="hidden md:flex hover:text-red-600 hover:border-[rgba(51,51,51,1)] hover:cursor-pointer"><a class="focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
+        
+        <li class="hidden md:flex hover:text-red-600 hover:border-[rgba(51,51,51,1)] hover:cursor-pointer"><a class="focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
+        
+        <li class="hidden md:flex hover:text-red-600 hover:border-[rgba(51,51,51,1)] hover:cursor-pointer"><a class="focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index2.html" target="_blank">ПРОЕКТЫ</a></li>
+        
+        <li class="hidden md:flex hover:text-red-600 hover:border-[rgba(51,51,51,1)] hover:cursor-pointer"><a class="focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index3.html" target="_blank">СЕРТИФИКАТЫ</a></li>
+        
+        <li class="hidden md:flex hover:text-red-600 hover:border-[rgba(51,51,51,1)] hover:cursor-pointer"><a class="focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
+
+        <li id="menuButton" class="text-[rgba(51,51,51,1)] focus:outline-double md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-        </button>
-      </div>
+        </li>
+
+    </ul>
+
+      <!-- mobileMenu -->
+    <ul  id="mobileMenu" class="fixed top-0 right-0 min-h-svh w-full sm:w-80 pt-6 space-y-3 z-[100] bg-white hidden flex-col">
+
+        <li class="px-5 py-2" id="closeButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </li>
+
+        <li class="px-5 py-2"><a class="hover:text-red-600 hover:cursor-pointer focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
       
-      <ul class="hidden sm:flex sm:space-x-3 md:space-x-5 lg:space-x-8 xl:space-x-10 text-[rgba(51,51,51,0.50)]">
-          <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
-          
-          <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
-          
-          <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index2.html" target="_blank">ПРОЕКТЫ</a></li>
-          
-          <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index3.html" target="_blank">СЕРТИФИКАТЫ</a></li>
-          
-          <li class="hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
-      </ul>
+        <li class="px-5 py-2"><a class="hover:text-red-600 hover:cursor-pointer focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
+        
+        <li class="px-5 py-2"><a class="hover:text-red-600 hover:cursor-pointer focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index2.html" target="_blank">ПРОЕКТЫ</a></li>
+        
+        <li class="px-5 py-2"><a class="hover:text-red-600 hover:cursor-pointer focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index3.html" target="_blank">СЕРТИФИКАТЫ</a></li>
+        
+        <li class="px-5 py-2"><a class="hover:text-red-600 hover:cursor-pointer focus:border-y-2 focus:border-[rgba(51,51,51,1)]" href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
 
-    </div>
-
-      <ul  id="mobileMenu" class="hidden sm:hidden">
-        <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index.html" target="_blank">ГЛАВНАЯ</a></li>
-        
-        <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index1.html" target="_blank">ГАЛЕРЕЯ</a></li>
-        
-        <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index2.html" target="_blank">ПРОЕКТЫ</a></li>
-        
-        <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index3.html" target="_blank">СЕРТИФИКАТЫ</a></li>
-        
-        <li class="block px-2 py-2 hover:border-y-2 hover:border-[rgba(51,51,51,0.50)] hover:cursor-pointer"><a href="./index4.html" target="_blank">КОНТАКТЫ</a></li>
     </ul>
 
   </nav>
 
-<!-- page-1 --> 
  <!-- section-1 -->
-          <div class="flex flex-col sm:flex-row items-center mx-auto mt-0 bg-purple-400"> 
+    <div class="flex flex-col sm:flex-row items-center mx-auto mt-0"> 
        
-        <div class="text-center pb-6 pt-2"> 
-          <h1 class="text-left text-3xl font-bold text-[rgba(189,189,189,1)]">PROJECT</h1> 
-          <h1 class="text-3xl font-bold text-[rgba(51,51,51,1)]">NURTOWN</h1> 
-        </div>
+      <div class="text-center pb-6 pt-2"> 
+        <h1 class="text-left text-3xl font-bold text-[rgba(189,189,189,1)]">PROJECT</h1> 
+        <h1 class="text-3xl font-bold text-[rgba(51,51,51,1)]">NURTOWN</h1> 
+      </div>
 
-        <img src="/assets/Images/big-image.png" alt="Responsive Image" class="w-full sm:w-1/2 h-auto"> 
+      <img src="/assets/Images/big-image.png" alt="Responsive Image" class="w-full sm:w-1/2 h-auto"> 
 
-      </div> 
+    </div> 
 
-    <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
-        const menu = document.getElementById('mobileMenu');
-        menu.classList.toggle('hidden');
-        });
-    </script>
+  <script>
+      document.getElementById('menuButton').addEventListener('click', function() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display='flex';
+      });
+
+      document.getElementById('closeButton').addEventListener('click', function() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display='none';
+      });
+  </script>
 </body>
 </html>
