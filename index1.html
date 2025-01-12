@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page-1</title>
+    <title>ГАЛЕРЕЯ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f7b7c37647.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="mx-auto justify-between flex items-center px-8 py-5 md:py-0 md:justify-start sm:pl-10 md:pl-16 md:pr-3 lg:pl-24 xl:pl-44 md:h-20 xl:h-24">
+  <nav class="mx-auto justify-between flex items-center px-8 py-5 md:py-0 md:justify-start sm:pl-10 md:pl-16 md:pr-3 lg:pl-24 xl:pl-44 md:h-20 xl:h-24">
     
         <img bg-green-100" src="/assets/Icons/logo.svg" alt="logo">
          
@@ -53,27 +53,132 @@
    
        </ul>
    
-    </nav>
+  </nav>
 
-    <section class="mt-20 px-8 sm:pl-10 md:pl-16 lg:pl-0 lg:ml-24  xl:ml-44 mx-auto">
+  <section class="mt-20 px-8 sm:pl-10 md:pl-16 lg:pl-0 lg:ml-24  xl:ml-44 mx-auto">
         
-        <div class="mb-10">
-           <h2 class="text-[rgba(189,189,189,1)] text-5xl">ГАЛЕРЕЯ</h2>
-           <h2 class="text-[rgba(51,51,51,1)] text-5xl font-bold">ФОТОГРАФИЙ</h2>
+      <div class="mb-10">
+          <h2 class="text-[rgba(189,189,189,1)] text-5xl xl:text-7xl">ГАЛЕРЕЯ</h2>
+          <h2 class="text-[rgba(51,51,51,1)] text-5xl xl:text-7xl font-bold">ФОТОГРАФИЙ</h2>
+      </div>
+
+      <span class="border bottom-2 flex flex-grow bg-gray-50 mb-7"></span>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+
+        <div class="flex flex-col justify-start">
+          <img class="w-full h-auto" src="/assets/Images/pg2-img1.svg" alt="image">
+          <span class="bg-slate-50 p-6 h-full">
+            <p class="w-full text-lg">
+              Описание или пояснение к изображению.
+            </p>
+          </span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-5">
-            <img class="w-full h-full" src="/assets/Images/pg2-img1.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img2.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img3.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img4.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img5.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img6.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img7.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img8.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img9.svg" alt="image">
-            <img class="w-full h-full" src="/assets/Images/pg2-img10.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img2.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img3.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img4.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img5.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img6.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img7.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img8.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img9.svg" alt="image">
+        <img class="w-full h-full" src="/assets/Images/pg2-img10.svg" alt="image">
+
+      </div>
+
+      <!-- pagination -->
+    <div class="mt-10 flex items-center gap-5">
+
+      <div class="flex justify-center space-x-5 text-lg"> 
+          <span class="text-black">01</span> 
+          <img src="/assets/Icons/Line 3.svg" alt="/" class="w-6 h-6"> 
+          <span class="text-gray-300">05</span> 
+      </div>
+
+      <div class="flex justify-center space-x-5 mt-4 mb-4">
+          <button class="bg-white w-8 h-8 border flex items-center justify-center">
+          <img src="/assets/Icons/arrow-2-left-long.svg" alt="arrow-left" class="w-4">
+          </button>
+          <button class="bg-slate-50 w-8 h-8 border flex items-center justify-center">
+          <img src="/assets/Icons/arrow-2-right-long.svg"  alt="arrow-right" class="w-4">
+          </button>
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- footer-section -->
+  <footer class="bg-[rgba(44,44,44,1)] text-white mt-20 max-lg:px-6">
+
+    <div class=" grid grid-cols-1 max-lg:gap-9 md:grid-cols-2 lg:grid-cols-4 py-14">
+    <!-- logo -->
+        <div class="flex max-lg:justify-start justify-center items-start">
+            <img src="/assets/Icons/logo-2.svg" alt="logo" class="w-[145px] h-[94px]">
         </div>
-    </section>
+    <!-- pages -->
+        <div>
+            <h4 class="font-semibold text-lg mb-6">Информация</h4>
+            <ul class="space-y-3">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    <!-- contect -->
+        <div>
+            <h4 class="font-semibold text-lg mb-6">Контакты</h4>
+            <ul class="space-y-6">
+                <li class="flex gap-5 pl-[-150px]">
+                    <img class="self-start" src="/assets/Icons/location.svg" alt="location">
+                    <a class="w-64 h-20" href="#">100000, Республика  Казахстан, 
+                    г. Караганда, ул. Телевизионная 10</a>
+                </li>
+                <li class="flex gap-5">
+                    <img src="/assets/Icons/phone.svg" alt="phone">
+                    <a href="#">+7 (701) 77 76 811</a>
+                </li>
+                <li class="flex gap-5">
+                    <img src="/assets/Icons/envelop.svg" alt="envelop">
+                    <a href="#">Galym.sultanov@mail.ru</a>
+                </li>
+            </ul>
+        </div>
+    <!-- social media -->
+        <div>
+            <h4 class="font-semibold text-lg mb-6">Социальные сети</h4>
+            <ul class="flex space-x-12">
+                <li><i class="fa-brands fa-twitter text-white"></i></li>
+                <li><i class="fa-brands fa-facebook-f text-white"></i></li>
+                <li><i class="fa-brands fa-linkedin text-white"></i></li>
+                <li><i class="fa-brands fa-pinterest-p text-white" ></i></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- copy-right -->
+    <div class="h-24 border-t-2 border-[rgba(200,200,200,0.5)] flex justify-center items-center">
+        <p class="text-sm lg:pl-48 text-[rgba(200,200,200,0.5)]">
+            © 2019 Digital Project. Все права защищены.
+        </p>
+    </div>
+    
+  </footer>
+
+<!-- JavaScript -->
+  <script>
+    document.getElementById('menuButton').addEventListener('click', function() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display='flex';
+    });
+
+    document.getElementById('closeButton').addEventListener('click', function() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display='none';
+    });
+  </script>
 </body>
 </html>
