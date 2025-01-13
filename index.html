@@ -56,7 +56,7 @@
 
   </nav>
 
- <!-- section-1 -->
+ <!-- hero-section-1 -->
     <div class="mx-auto mt-0 px-6 flex flex-col sm:flex-row items-center sm:pl-10 sm:pr-10 sm:gap-5 md:pl-16 md:pr-10 md:gap-8 lg:pl-24 lg:pr-12 lg:gap-12 xl:gap-20 xl:pl-44"> 
        
     <div class="sm:pt-28 md:pt-32 lg:pt-40 xl:pt-44">
@@ -74,7 +74,7 @@
         <button class="bg-slate-50 w-10 h-10 border flex items-center justify-center hover:ring-2 hover:ring-[rgb(83,82,82)] focus:border-[rgba(51,51,51,1)]">
           <img src="/assets/Icons/arrow-2-right-long.svg"  alt="arrow-right" class="w-4">
         </button>
-        <span class="h-2 bg-slate-200"></span>
+        <span class="h-1 bg-slate-100 flex-grow -ml-5 -mr-28"></span>
       </div>
 
       <div class="hidden sm:flex items-center space-x-5 text-lg text-gray-300"> 
@@ -97,22 +97,22 @@
     </div> 
     <!-- pagination for mobile -->
     <div class="sm:hidden flex justify-center space-x-5 mt-4 mb-4">
-      <button class="bg-white w-10 h-10 border flex items-center justify-center">
+      <button class="bg-white w-10 h-10 border flex items-center justify-center hover:ring-2 hover:ring-[rgb(83,82,82)] focus:border-[rgba(51,51,51,1)]">
         <img src="/assets/Icons/arrow-2-left-long.svg" alt="arrow-left" class="w-4">
       </button>
-      <button class="bg-slate-50 w-10 h-10 border flex items-center justify-center">
+      <button class="bg-slate-50 w-10 h-10 border flex items-center justify-center hover:ring-2 hover:ring-[rgb(83,82,82)] focus:border-[rgba(51,51,51,1)]">
         <img src="/assets/Icons/arrow-2-right-long.svg"  alt="arrow-right" class="w-4">
       </button>
     </div>
 
     <div class="sm:hidden flex justify-center space-x-5 text-lg text-gray-300"> 
-      <span>01</span> 
+      <span class="hover:ring-2 hover:ring-[rgb(83,82,82)] focus:border-[rgba(51,51,51,1)]">01</span> 
       <img src="/assets/Icons/Line 3.svg" alt="/" class="w-6"> 
-      <span>02</span> 
+      <span class="hover:ring-2 hover:ring-[rgb(83,82,82)] focus:border-[rgba(51,51,51,1)]">02</span> 
     </div>
     
-    <!-- section-2 -->
-    
+
+    <!-- count-section-2 -->
 <div class=" mt-20 bg-transparent lg:ml-24 lg:mr-12 xl:ml-44 mx-auto 2xl:h-screen">
     <div class="bg-gray-50 pt-8 h-[80%]">
 
@@ -146,7 +146,7 @@
 </div>
 
   
-  <!-- section-3 -->
+  <!--building-section-3 -->
   <div class="max-2xl:mt-20 lg:ml-24 xl:ml-44 mr-12 mx-auto">
     <h1 class="mb-16 max-lg:px-6 font-light text-4xl md:text-5xl leading-10 text-[rgba(189,189,189,1)]">
       Основные задачи
@@ -186,8 +186,8 @@
 
   </div>
   
-  <!-- section-4 -->
-   <div class="mt-20 px-6 lg:ml-24 lg:mr-12 xl:ml-44">
+  <!-- gallery-section-4 -->
+   <div class="mt-20 max-lg:px-6 lg:ml-24 lg:mr-12 xl:ml-44">
       <h1 class="text-[rgba(189,189,189,1)] font-light text-7xl mb-16">
         Наши проекты
       </h1>
@@ -202,7 +202,7 @@
               <h1 class="font-[700px] text-[64px] md:max-xl:text-5xl leading-[64px] ">
                 ДОСУГОВЫЙ ЦЕНТР
               </h1>
-              <button class="flex gap-3 mt-3 text-white text-opacity-70">
+              <button class="flex gap-3 mt-3 text-white text-opacity-70 hover:bg-[rgb(83,82,82)]">
                 ПОДРОБНЕЕ
                 <img  src="/assets/Icons/arrow-2-right-long-white.svg" alt="arrow-right">
               </button>
@@ -227,8 +227,8 @@
 
    </div>
 
-   <!-- section-5 -->
-    <div class="px-6 mt-20 lg:ml-24 lg:mr-12 xl:ml-44">
+   <!--form-section-5 -->
+    <div class="max-lg:px-6 mt-20 lg:ml-24 lg:mr-12 xl:ml-44">
 
       <h1 class="text-[rgba(189,189,189,1)] text-5xl md:text-6xl lg:text-7xl mb-16">
         Связаться с нами
@@ -243,10 +243,11 @@
           <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="email" placeholder="E-mail*" required/>
           <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="text" placeholder="Интересующий товар/услуга">
           <textarea class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" placeholder="Сообщение*" rows="6" required></textarea>
+          
 
-          <div class="w-full flex gap-6 items-start">
-            <input type="checkbox" id="agree" name="agree" required>
-            <label for="agree">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</label>
+          <div class="relative w-full flex items-start">
+            <i class="fa-solid fa-check w-[42px] h-[30px] flex justify-center items-center absolute bottom-32 -left-2"></i>
+            <label for="agree" class="ml-8">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</label>
           </div>
 
           <button class="w-52 h-16 mt-6 bg-[rgba(51,51,51,1)] flex justify-center items-center gap-2 text-white text-opacity-70 hover:bg-[rgb(83,82,82)]">
@@ -264,7 +265,7 @@
 
    </div>
 
-   <!-- section-6 -->
+   <!-- footer-section-6 -->
    <footer class="bg-[rgba(44,44,44,1)] text-white mt-20 max-lg:px-6">
 
     <div class=" grid grid-cols-1 max-lg:gap-9 md:grid-cols-2 lg:grid-cols-4 py-14">
