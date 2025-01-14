@@ -195,11 +195,10 @@
       <div class="grid md:grid-rows-2 gap-6">
 
         <div class="grid grid-cols-1 md:grid-cols-[5.55fr_5.55fr] gap-6">
-
           <div class="relative bg-[rgba(51,51,51,0.7)]">
             <img class="w-full h-full mix-blend-multiply" src="/assets/Images/pg1-g1.png" alt="arrow-right">
-            <div class="absolute left-14 top-7 sm:left-24 sm:top-14 md:left-10 md:top-6 lg:left-14 lg:top-10 xl:left-20 xl:top-12 w-[413px] h-[160px] text-white">
-              <h1 class="font-[700px] text-[64px] md:max-xl:text-5xl leading-[64px] ">
+            <div class="absolute left-14 top-7 sm:left-24 sm:top-14 md:left-10 md:top-6 lg:left-14 lg:top-10 xl:left-20 xl:top-12 2xl:left-32 2xl:top-16 w-[413px] h-[160px] text-white">
+              <h1 class="max-lg:text-5xl md:max-xl:text-5xl font-bold text-[64px] leading-[64px]">
                 ДОСУГОВЫЙ ЦЕНТР
               </h1>
               <button class="flex gap-3 mt-3 text-white text-opacity-70 hover:bg-[rgb(83,82,82)]">
@@ -209,7 +208,6 @@
             </div>
           </div>
           <img class="w-full h-full" src="/assets/Images/pg1-g2.png" alt="imgG2"/>
-
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-[2.7fr_4.7fr_3.7fr] gap-6">
@@ -239,10 +237,23 @@
         <form class="space-y-3 max-w-md max-md:mx-auto">
       
           <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="text" placeholder="Имя" maxlength="30" required/>
-          <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="tel" placeholder="Номер телефона*" maxlength="11" required/>
-          <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="email" placeholder="E-mail*" required/>
+
+          <div class="relative">
+            <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="tel" placeholder="Номер телефона" maxlength="11" required/>
+            <span class=" text-red-700 absolute top-3 left-[137px]">*</span>
+          </div>
+
+          <div class="relative">
+            <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="email" placeholder="E-mail" required/>
+            <span class=" text-red-700 absolute top-3 left-[58px]">*</span>
+          </div>
+
           <input class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" type="text" placeholder="Интересующий товар/услуга">
-          <textarea class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" placeholder="Сообщение*" rows="6" required></textarea>
+
+          <div class="relative">
+            <textarea class="w-full bg-[rgba(243,243,243,1)] outline-none border px-3 py-3 focus:ring-[rgba(51,51,51,1)] focus:ring-2 hover:cursor-pointer" placeholder="Сообщение" rows="6" required></textarea>
+            <span class=" text-red-700 absolute top-3 left-[100px]">*</span>
+          </div>
           
 
           <div class="relative w-full flex items-start">
